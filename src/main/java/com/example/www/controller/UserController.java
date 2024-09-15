@@ -14,13 +14,13 @@ import com.example.www.model.User;
 import com.example.www.service.UserService;
 
 @RestController
-@RequestMapping("/api")
-@CrossOrigin("https://user-data-manager-app.netlify.app/")
+@RequestMapping("/")
+//@CrossOrigin("https://user-data-manager-app.netlify.app/")
 public class UserController {
 	@Autowired
 	private UserService userService;
 
-	@GetMapping("/users")
+	@GetMapping
 	public List<User> getAllUsers() {
 		return userService.getAllUsers();
 	}
