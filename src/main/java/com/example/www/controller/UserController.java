@@ -15,7 +15,7 @@ import com.example.www.service.UserService;
 
 @RestController
 @RequestMapping("/")
-//@CrossOrigin("https://user-data-manager-app.netlify.app/")
+@CrossOrigin("https://user-data-manager-app.netlify.app/")
 public class UserController {
 	@Autowired
 	private UserService userService;
